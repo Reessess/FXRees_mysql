@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.infoman.controller.MainController">
+   <children>
+      <Label contentDisplay="RIGHT" prefHeight="66.0" prefWidth="600.0" text="Student Information" textAlignment="JUSTIFY" textFill="#1c3c2a">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+         <padding>
+            <Insets left="75.0" />
+         </padding></Label>
+      <TextField fx:id="firstName" promptText="First Name">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="middleName" promptText="Middle Name">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="lastName" promptText="Last Name">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="address" promptText="Address">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="phoneNumber" promptText="Phone Number">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="email" promptText="Email">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <ComboBox fx:id="gender" prefWidth="150.0" promptText="Gender" />
+      <Button mnemonicParsing="false" onAction="#save" text="Save">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+   <padding>
+      <Insets left="15.0" right="15.0" />
+   </padding>
+</VBox>
